@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:8.4.7'
+    environment:
+      - 'MYSQL_DATABASE=notifierdb'
+      - 'MYSQL_PASSWORD=notifierdb'
+      - 'MYSQL_ROOT_PASSWORD=notifierdb'
+      - 'MYSQL_USER=admin'
+    ports:
+      - '3306:3306'
